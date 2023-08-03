@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DivKitPro'
-  s.version          = '1.1.0'
+  s.version          = '2.0.0'
   s.summary          = 'DivKitPro for iOS'
 
   s.description      = <<-DESC
@@ -12,7 +12,10 @@ Pod::Spec.new do |s|
   s.authors          = 'YANDEX LLC'
 
   s.source           = {
-      :http => 'https://div-storage.s3.yandex.net/releases/DivKitPro-1.1.0.tar.gz'
+      :git => 'https://github.com/divkit/divkit-ios.git'
+  }
+  s.source           = {
+    :http => 'https://div-storage.s3.yandex.net/releases/DivKitPro-1.1.0.tar.gz'
   }
 
   s.cocoapods_version = '>= 1.10.0'
@@ -20,8 +23,8 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target  = '11.0'
 
-  s.dependency 'DivKit', '~> 26.0.0'
-  s.dependency 'DivKitExtensions', '~> 26.0.0'
+  s.dependency 'DivKit', '~> 27.0.0'
+  s.dependency 'DivKitExtensions', '~> 27.0.0'
   s.dependency 'lottie-ios', '~> 4.2.0'
 
   s.vendored_frameworks = "Frameworks/DivKitPro.xcframework"
