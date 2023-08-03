@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DivKitPro'
-  s.version          = '2.2.0'
+  s.version          = '2.5.0'
   s.summary          = 'DivKitPro for iOS'
 
   s.description      = <<-DESC
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   DESC
 
   s.homepage         = 'https://github.com/divkit/divkitpro'
-  s.license          = { :type => 'MIT', :file => 'LICENSE'  }
+  s.license          = { :type => 'MIT', :text => 'Copyright (c) 2023 YANDEX LLC' }
   s.authors          = 'YANDEX LLC'
 
   s.source           = {
