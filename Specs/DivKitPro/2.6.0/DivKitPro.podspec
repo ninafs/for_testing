@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DivKitPro'
-  s.version          = '2.5.0'
+  s.version          = '2.6.0'
   s.summary          = 'DivKitPro for iOS'
 
   s.description      = <<-DESC
