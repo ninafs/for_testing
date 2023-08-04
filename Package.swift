@@ -17,8 +17,8 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "DivKitPro",
-      url: "https://div-storage.s3.yandex.net/releases/DivKitPro-2.0.0.xcframework.zip",
-      checksum: "96c327834968297352517ae130494290dbabd605c162bf1fdc8a74e16e824192"
+      url: "https://div-storage.s3.yandex.net/releases/DivKitPro-2.0.1.xcframework.zip",
+      checksum: "a58734d0d328179f82875fdc01aaa76b5ab0a09820bc84e2e5f1ccdacaf85342"
     ),
     .target(
       name: "WrapperForDivKitPro",
