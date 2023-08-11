@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.authors          = 'YANDEX LLC'
 
   s.source           = {
-      :http => 'https://div-internal.s3.yandex.net/divpro-sources/DivKitPro-2.0.0.zip'
+      :http => 'https://s3.mds.yandex.net/div-internal/divpro-sources/DivKitPro-2.0.0.zip'
   }
 
   s.cocoapods_version = '>= 1.10.0'
