@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.swift_version     = '5.3'
   s.requires_arc = true
   s.prefix_header_file = false
-  s.platforms = { :ios => '11.0' }
+  s.platforms = { :ios => '13.7' }
 
   s.dependency 'DivKit', '~> 27'
   s.dependency 'DivKitExtensions', '~> 27'
