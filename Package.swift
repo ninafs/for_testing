@@ -27,7 +27,10 @@ let package = Package(
               .product(name: "DivKit", package: "divkit-ios"),
               .product(name: "DivKitExtensions", package: "divkit-ios"),
             ],
-            path: "DivKitPro"
+            path: "DivKitPro",
+            swiftSettings: [
+              .unsafeFlags(["-warnings-as-errors"])
+            ]
         ),
         .target(
             name: "DivKitProLottie",
