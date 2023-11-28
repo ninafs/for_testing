@@ -27,10 +27,7 @@ let package = Package(
               .product(name: "DivKit", package: "divkit-ios"),
               .product(name: "DivKitExtensions", package: "divkit-ios"),
             ],
-            path: "DivKitPro",
-            swiftSettings: [
-              .unsafeFlags(["-warnings-as-errors"])
-            ]
+            path: "DivKitPro"
         ),
         .target(
             name: "DivKitProLottie",
@@ -45,8 +42,6 @@ let package = Package(
 )
 
 func divkitDependency() -> Package.Dependency {
-  if let url = ProcessInfo.processInfo.environment["DIVKIT_IOS_SPM_REPO"] {
-    return .package(url: url, "28.10.0"..."28.11.0")
-  }
-  return .package(url: "https://github.com/divkit/divkit-ios.git", from: "28.0.0")
+  let url = ProcessInfo.processInfo.environment["DIVKIT_IOS_SPM_REPO"] ?? "https://github.com/divkit/divkit-ios.git"
+  return .package(url: url, from: "28.0.0")
 }
