@@ -16,7 +16,7 @@ let package = Package(
             targets: ["DivKitProLottie"]),
     ],
     dependencies: [
-      .package(url: "https://github.com/divkit/divkit-ios.git", from: "27.0.0"),
+      divkitDependency(),
       .package(url: "https://github.com/airbnb/lottie-ios.git", from: "4.2.0"),
     ],
     targets: [
@@ -39,3 +39,10 @@ let package = Package(
         ),
     ]
 )
+
+func divkitDependency() -> Package.Dependency {
+  if let url = ProcessInfo.processInfo.environment["DIVKIT_IOS_SPM_REPO"] {
+    return .package(url: url, from: "28.0.0")
+  }
+  return .package(url: "https://github.com/divkit/divkit-ios.git", from: "28.0.0")
+}
