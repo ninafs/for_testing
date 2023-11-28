@@ -1,5 +1,6 @@
 // swift-tools-version:5.5
 
+import class Foundation.ProcessInfo
 import PackageDescription
 
 let package = Package(
@@ -42,7 +43,7 @@ let package = Package(
 
 func divkitDependency() -> Package.Dependency {
   if let url = ProcessInfo.processInfo.environment["DIVKIT_IOS_SPM_REPO"] {
-    return .package(url: url, from: "28.0.0")
+    return .package(url: url, "28.10.0"..."28.11.0")
   }
   return .package(url: "https://github.com/divkit/divkit-ios.git", from: "28.0.0")
 }
